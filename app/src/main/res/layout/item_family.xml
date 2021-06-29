@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/family_layout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:background="@color/category_family"
+    android:layout_height="wrap_content"
+    android:drawSelectorOnTop="true">
+
+    <ImageView
+        android:id="@+id/image_family"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/lanFamilyTv"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:src="@mipmap/ic_launcher"/>
+
+    <TextView
+        android:id="@+id/lanFamilyTv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="One"
+        android:paddingTop="16dp"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:paddingStart="16dp"
+        android:paddingBottom="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/image_family"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/engFamilyTv"/>
+
+    <TextView
+        android:id="@+id/engFamilyTv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:paddingStart="16dp"
+        android:paddingBottom="16dp"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:text="One"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/image_family"
+        app:layout_constraintTop_toBottomOf="@+id/lanFamilyTv" />
+
+    <ImageButton
+        android:id="@+id/play_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/category_family"
+        android:src="@drawable/ic_play"
+        android:padding="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
